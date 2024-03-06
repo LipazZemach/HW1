@@ -1,6 +1,6 @@
 body {
   font-style: italic;
-  font-size: 19;
+  font-size: 19px; /* הוספת יחידת מדידה לגודל הפונט */
   align-items: center;
   justify-content: center;
 }
@@ -11,14 +11,48 @@ h1 {
 h2 {
   text-align: center;
 }
-
 ul {
   list-style: none;
   display: flex;
   justify-content: center;
 }
-div {
-  align-items: center;
+
+li {
+  margin: 10px;
+  font-size: 25;
+}
+
+section img {
+  width: 250px;
+  height: 300px;
+  margin-left: 10px;
+  padding: 0;
+  margin-right: 16px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: right;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  height: 320px;
+  text-align: center;
+  margin: 10px; /* רווח בין הכרטיסים */
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
 }
 #about {
   background-color: rgb(214, 208, 31);
@@ -29,21 +63,18 @@ div {
   display: flex;
 }
 #NutritionalValue {
-  background-color: rgb(185, 193, 115);
+  background-color: rgb(238, 246, 164);
   display: flex;
 }
-
 header {
   background-image: url("./images/back.jpg");
   background-size: cover;
   background-position: center;
 }
-
 section {
   overflow: hidden;
 }
-
-img {
+img.container {
   width: 250px;
   height: 300px;
   margin-left: 10px;
@@ -51,53 +82,11 @@ img {
   margin-right: 16px;
 }
 
-.vegetables {
-  text-align: center;
-  padding: 50px;
-  margin-top: 20px;
-  object-fit: cover;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: absolute;
-}
-
-.card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  text-align: right;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 200px;
-  height: 320px;
-  text-align: center;
-}
-
-.card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card img {
-  width: 100%;
-  max-height: 180px;
-  object-fit: cover;
-}
-
 #end {
   background-image: url("./images/vag.jpg");
-  margin-top: 700px;
   width: 100%;
   height: 50%;
   background-size: cover;
   background-position: center;
   text-align: center;
-}
-
-li {
-  margin: 10px;
-  font-size: 25;
 }
